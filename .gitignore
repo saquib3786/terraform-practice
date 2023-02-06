@@ -1,0 +1,12 @@
+# local .terraform file (it stores the providers packages . it gets generated when doing "git init")
+.terraform/*
+
+# terraform.tfstate (It is a file generated when doing "terraform plan" it gets updated everytime we do 
+#terraform plan two files gets genetrated one is the present state and other is the previous state called 
+#"terraform.tfstate.Backup")
+
+*.tfstate
+*.tfstate.*
+
+# tf variable files may include sensitive data
+*.tfvars
